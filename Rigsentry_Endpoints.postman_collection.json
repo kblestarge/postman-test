@@ -1,0 +1,733 @@
+{
+	"info": {
+		"_postman_id": "998e1e54-bc20-4cc0-b177-0aa192c10f38",
+		"name": "Rigsentry Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "equipments",
+			"item": [
+				{
+					"name": "{{rigsentryBaseUrl}}api/equipments/GetAll",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "de12a2a2-a7dd-4018-915f-9764a2002468",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/equipments/GetAll",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"equipments",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{rigsentryBaseUrl}}api/equipments/GetById/{{equipmentMasterId}}",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6507211a-a7ed-4f0b-8121-1799e8453f1d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/equipments/GetById/{{equipmentMasterId}}",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"equipments",
+								"GetById",
+								"{{equipmentMasterId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{rigsentryBaseUrl}}api/equipments/GetAllTopDrivesByCompany/RSRM/Transocean/TopDrives",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dd4f430d-cd05-49b8-a6c7-9c3e9aa75f98",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/equipments/GetAllTopDrivesByCompany/RSRM/Transocean/TopDrives",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"equipments",
+								"GetAllTopDrivesByCompany",
+								"RSRM",
+								"Transocean",
+								"TopDrives"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{rigsentryBaseUrl}}api/equipments/GetTopDrivesByCompany/RSRM/Noble/Deepwater Conqueror",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a1f798f9-00ba-460c-a10b-c5162249ed71",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/equipments/GetTopDrivesByCompany/RSRM/Noble/Don Taylor",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"equipments",
+								"GetTopDrivesByCompany",
+								"RSRM",
+								"Noble",
+								"Don Taylor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{rigsentryBaseUrl}}api/equipments/GetEquipmentByPath/RSRM/Transocean/Deepwater Conqueror",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "03788890-56db-45bd-bf2c-58696af1d3a0",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/equipments/GetEquipmentByPath/RSRM/Transocean/Deepwater Conqueror",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"equipments",
+								"GetEquipmentByPath",
+								"RSRM",
+								"Transocean",
+								"Deepwater Conqueror"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{rigsentryBaseUrl}}api/equipments/GetEquipmentValuesByAttributeId/RSRM/NOV/GT2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d939cfb0-5bf6-4525-af41-90219ba53183",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/equipments/GetEquipmentValuesByAttributeId/RSRM/NOV/GT2",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"equipments",
+								"GetEquipmentValuesByAttributeId",
+								"RSRM",
+								"NOV",
+								"GT2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{rigsentryBaseUrl}}api/equipments/GetEquipmentAttributeValueByPath/RSRM/NOV/GT2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "48fcbd48-efc6-4687-8abd-1e68fad20598",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/equipments/GetEquipmentAttributeValueByPath/RSRM/NOV/GT2",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"equipments",
+								"GetEquipmentAttributeValueByPath",
+								"RSRM",
+								"NOV",
+								"GT2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{rigsentryBaseUrl}}api/EquipmentPerformance/Get/Performance/18426/RSRM",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e2d15673-43af-48d7-8558-2a9867f8e74d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/EquipmentPerformance/Get/Performance/18426/RSRM",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"EquipmentPerformance",
+								"Get",
+								"Performance",
+								"18426",
+								"RSRM"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "rigs",
+			"item": [
+				{
+					"name": "{{rigsentryBaseUrl}}api/rigs/GetById/{{rigId}}",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3ffb1f61-7425-4581-8e95-c96775786205",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"rigId matches: \"+pm.environment.get(\"rigId\"), function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.rigId).to.eql(pm.environment.get(\"rigId\"));\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/rigs/GetById/{{rigId}}",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"rigs",
+								"GetById",
+								"{{rigId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{rigsentryBaseUrl}}api/rigs/GetAll",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "10671831-e499-4d83-9bf9-9a38ac5418ba",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body has string: Globetrotter II\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Globetrotter II\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/rigs/GetAll",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"rigs",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{rigsentryBaseUrl}}api/rigs/GetByAppAndAF/RSBOP/{{rigId}}",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d6eedbda-b108-43f9-92c2-0c74c7d7dd15",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string: \"+\"RIG.\"+pm.environment.get(\"rigId\"), function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"RIG.\"+pm.environment.get(\"rigId\"));\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/rigs/GetByAppAndAF/RSBOP/{{rigId}}",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"rigs",
+								"GetByAppAndAF",
+								"RSBOP",
+								"{{rigId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "RigPerformanceComparison",
+			"item": [
+				{
+					"name": "{{rigsentryBaseUrl}}api/RigPerformanceComparison/EquipmentRigCompanyByEquipmentCategoryId/2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d26271a2-65da-455c-b81d-239a265f502c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"JSON contains Odfjell Drilling rigs and equipment\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData[0].companyName).to.eql(\"Odfjell Drilling\");\r",
+									"    pm.expect(jsonData[0].companyRigs[0].rigName).to.eql(\"Deepsea Atlantic\");\r",
+									"    pm.expect(jsonData[0].companyRigs[0].rigEquipments[0].equipmentName).to.eql(\"Topdrive\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/RigPerformanceComparison/EquipmentRigCompanyByEquipmentCategoryId/2",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"RigPerformanceComparison",
+								"EquipmentRigCompanyByEquipmentCategoryId",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{rigsentryBaseUrl}}api/RigPerformanceComparison/GetSignalsByFeatureId/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d26271a2-65da-455c-b81d-239a265f502c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"JSON contains Odfjell Drilling rigs and equipment\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData[0].companyName).to.eql(\"Odfjell Drilling\");\r",
+									"    pm.expect(jsonData[0].companyRigs[0].rigName).to.eql(\"Deepsea Atlantic\");\r",
+									"    pm.expect(jsonData[0].companyRigs[0].rigEquipments[0].equipmentName).to.eql(\"Topdrive\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/RigPerformanceComparison/GetSignalsByFeatureId/1",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"RigPerformanceComparison",
+								"GetSignalsByFeatureId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{rigsentryBaseUrl}}api/RigPerformanceComparison/AggregatedAttributeValueByPaths",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3c14f44a-6170-4f0b-8200-a0c5dde26337",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"JSON contains Odfjell Drilling rigs and equipment\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData[0].companyName).to.eql(\"Odfjell Drilling\");\r",
+									"    pm.expect(jsonData[0].companyRigs[0].rigName).to.eql(\"Deepsea Atlantic\");\r",
+									"    pm.expect(jsonData[0].companyRigs[0].rigEquipments[0].equipmentName).to.eql(\"Topdrive\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/RigPerformanceComparison/GetSignalsByFeatureId/1",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"RigPerformanceComparison",
+								"GetSignalsByFeatureId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{rigsentryBaseUrl}}api/RigPerformanceComparison/AggregatedAttributeValueByPaths",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3c14f44a-6170-4f0b-8200-a0c5dde26337",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"JSON contains Odfjell Drilling rigs and equipment\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData[0].companyName).to.eql(\"Odfjell Drilling\");\r",
+									"    pm.expect(jsonData[0].companyRigs[0].rigName).to.eql(\"Deepsea Atlantic\");\r",
+									"    pm.expect(jsonData[0].companyRigs[0].rigEquipments[0].equipmentName).to.eql(\"Topdrive\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CWP-Credential",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{rigsentryBaseUrl}}api/RigPerformanceComparison/AggregatedAttributeValueByPaths?path=Noble\\Noble Regina Allen\\Top Drive|TD_Aggregated&path=Transocean\\Deepwater Conqueror\\Top Drive Main|SS-022-A06-st",
+							"host": [
+								"{{rigsentryBaseUrl}}api"
+							],
+							"path": [
+								"RigPerformanceComparison",
+								"AggregatedAttributeValueByPaths"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "Noble\\Noble Regina Allen\\Top Drive|TD_Aggregated"
+								},
+								{
+									"key": "path",
+									"value": "Transocean\\Deepwater Conqueror\\Top Drive Main|SS-022-A06-st"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Attributes",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "{{rigsentryBaseUrl}}api/startup",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5cf7ff00-1352-466b-9ee0-744c37bcf07a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "CWP-Credential",
+						"type": "text",
+						"value": "{{token}}"
+					}
+				],
+				"url": {
+					"raw": "{{rigsentryBaseUrl}}api/startup",
+					"host": [
+						"{{rigsentryBaseUrl}}api"
+					],
+					"path": [
+						"startup"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
